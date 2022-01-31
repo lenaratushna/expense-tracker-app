@@ -16,18 +16,17 @@ const App = () => {
       justifyContent="center"
       style={{ height: "100vh" }}
     >
-      <Grid item xs={12} sm={3}>
+      <Grid item xs={12} sm={4}>
         <Main />
       </Grid>
-      {/* <Grid item container direction="column" spacing={2} md={12} lg={5}> */}
-      <Grid item xs={12} sm={4} >
-        <Details title="Income"/>
+      <Grid item container direction="column" spacing={3} xs={12} sm={3}>
+        <Grid item>
+          <Details title="Income" />
+        </Grid>
+        <Grid item>
+          <Details title="Expense" />
+        </Grid>
       </Grid>
-      <Grid item item xs={12} sm={4}>
-      <Details title="Expense" />
-      </Grid> 
-      {/* </Grid> */}
-
     </Grid>
   );
 };
